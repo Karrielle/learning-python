@@ -163,7 +163,7 @@
 #     print('Aluno reprovado')
 
 
-import  math as m, calendar as c, datetime as d, time as t,  random as r
+# import  math as m, calendar as c, datetime as d, time as t,  random as r
 
 # print(m.pi)
 # nome = str(input('\nDigite seu nome: '))
@@ -193,8 +193,77 @@ import  math as m, calendar as c, datetime as d, time as t,  random as r
 #     num = r.randint(0, 100)
 #     print(num)
 
-num = 1
+# num = 1
 
-while num <= 10:
-    print(num)
-    num += 1
+# while num <= 10:
+#     print(num)
+#     num += 1
+
+
+
+
+# while True:
+#     nome = input("Digite seu nome, ou 'x' para parar: ")
+#     if nome == 'x':
+#         break
+#     print(f'Bem vindo, {nome}')
+# print("Até logo!")
+
+
+# for contador in range(1, 11):
+#     print(f'{contador}')
+
+
+
+# print("Gerar números da loteria.\n")
+# vezes = input('Digite um número de vezes: ')
+# for n in vezes:
+#     numero = r.sample(range(1, 50), 5)
+#     print(numero)
+
+
+
+# print("Gerar números da loteria.\n")
+
+# numeros = r.sample(range(1, 51), 5)
+# print(sorted(numeros))
+
+
+# import random
+
+# def inicio():
+#     print("Gerar números da loteria.\n")
+#     vezes = int(input("Digite quantos números deseja gerar: "))
+
+#     for n in range(vezes):
+#         print(random.randint(1, 50), end=" ")
+
+# inicio()
+
+# def inicio():
+#     for contA in range(1, 6):
+#         print("Rodada " + str(contA) + "\n")
+#         for contB in range(1, 6):
+#             print(" Valor: " + str(contB) + "\n")
+
+# inicio()
+
+import random
+
+def inicio():
+    print("Para sair do programa tecle 0")
+    while True:
+        quant = int(input("Quantos números deseja gerar? "))
+        if quant == 0:
+            break
+        for cont in range(1, quant + 1):
+            print(random.randint(1, 100))
+
+inicio()
+
+
+
+
+    
+
+
