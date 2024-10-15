@@ -248,22 +248,85 @@
 
 # inicio()
 
-import random
+# import random
 
-def inicio():
-    print("Para sair do programa tecle 0")
-    while True:
-        quant = int(input("Quantos números deseja gerar? "))
-        if quant == 0:
-            break
-        for cont in range(1, quant + 1):
-            print(random.randint(1, 100))
+# def inicio():
+#     print("Para sair do programa tecle 0")
+#     while True:
+#         quant = int(input("Quantos números deseja gerar? "))
+#         if quant == 0:
+#             break
+#         for cont in range(1, quant + 1):
+#             print(random.randint(1, 100))
 
-inicio()
+# inicio()
 
-
-
-
-    
+# import numpy as np
 
 
+# números = np.array([2,6,7,9,0,1,2,4,8], np.int16)
+
+# print(type(números))
+# print(números[-1])
+# print(números.dtype) #padrão int32
+
+# números[0] = 3
+# print(números[0])
+# # Array bidimensional com Numpy
+
+# M = np.array([[1,3,5],[2,4,6],[3,5,7]])
+# print(M)
+
+# print(M[0,1])
+# M[0,1] = 7
+# print(M[0,1])
+
+# #VISUALIZAR UMA COLUNA INTEIRA
+# print(f'primeira coluna: {M[:,0]}')
+# print(f'primeira coluna: {M[:,1]}')
+
+# #VISUALIZAR UMA LINHA INTEIRA
+# print(f'Segunda linha: {M[1,:]}')
+
+# #NÚMERO DE DIMENSÕES DE UM ARRAY
+# print(números.ndim)
+# print(M.ndim)
+
+# #TAMANHO DO ARRAY
+# print(números.shape)
+# print(M.shape)
+
+# #NÚMEROS DE ELEMENTOS DE UM ARRAY
+# print(números.size)
+# print(M.size)
+
+
+# # Solicita ao usuário para inserir os valores
+# valores = input("Insira os valores separados por espaço: ")
+
+# # Converte os valores inseridos em uma lista de números
+# lista_valores = list(map(float, valores.split()))
+
+# # Cria um array NumPy a partir da lista de valores
+# array_valores = np.array(lista_valores)
+
+# # Ordena o array
+# array_ordenado = np.sort(array_valores)
+
+# print("Array ordenado:", array_ordenado)
+
+
+# def mostraMensagem():
+#   print('Bóson Treinamentos em Tecnologia')
+#   print('Curso de Lógica de Porgramação')
+
+
+# mostraMensagem()
+
+def calculoCubo(num):
+    print('Cálculo do cubo de um número')
+    c = num ** 3
+    print(f'O Cubo é: {c}')
+
+
+calculoCubo(7)
